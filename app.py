@@ -43,7 +43,7 @@ def get_account_invoice_report():
             "params": {
                 "model": "account.invoice.report",
                 "method": "search_read",
-                "args": [[]],
+                 "args": [[["invoice_date", ">", "2025-01-01"]]],
                 "kwargs": {
                     "offset": offset,
                     "limit": limit
